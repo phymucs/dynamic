@@ -1,0 +1,14 @@
+net: "train_val_bf16_fma_fp32_wu_bn_msra.prototxt"
+test_initialization: false
+random_seed: 30
+display: 200
+base_lr: 0.05
+lr_policy: "multistep"
+stepvalue: 120000
+stepvalue: 240000
+gamma: 0.1
+max_iter: 360000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot_prefix: "fma_bf16_fp32_wu_bn_res_50"
+solver_mode: CPU

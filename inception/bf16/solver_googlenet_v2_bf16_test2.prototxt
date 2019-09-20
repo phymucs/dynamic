@@ -1,0 +1,12 @@
+net: "train_val.prototxt"
+random_seed: 30
+test_initialization: false
+base_lr: 0.045
+lr_policy: "step"
+stepsize: 427
+gamma: 0.96
+max_iter: 120000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot_prefix: "bf16_googlenet_v2"
+solver_mode: CPU

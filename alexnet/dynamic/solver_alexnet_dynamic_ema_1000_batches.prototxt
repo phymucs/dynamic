@@ -1,0 +1,13 @@
+net: "train_val_200_cat_1000_out_bs_256.prototxt"
+test_initialization: false
+random_seed: 30
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 20000
+display: 1000
+max_iter: 90000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot_prefix: "dynamic_ema_1000_batches/alexnet_dynamic_ema_1000"
+solver_mode: CPU
