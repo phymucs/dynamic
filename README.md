@@ -15,3 +15,5 @@ To run the command you will need to use the proper name of python script to exec
 ```pin -inline 1 -t pintool_path/dynamic.so -- python trainAlexNetDynamic.py solver_alexnet_dynamic_ema_1000_batches.prototxt 100```
 
 The file *'solver_alexnet_dynamic_ema_1000_batches.prototxt'* is the CNN model to use. In this case Alexnet. And the last parameter make reference to the parameter *numBatchesBF16=100xnumBatchesMP* referred in the paper.
+
+Each model folder contains a script called *restore_model.py*, this script is used in case you need to take a previous snapshot of the training process to continue with the training of the network, we take a snapshot each 1000 steps.
